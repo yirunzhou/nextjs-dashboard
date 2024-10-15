@@ -3,7 +3,7 @@
     "next/core-web-vitals",
     "next/typescript"
   ],
-  "rules": [
+  "rules": {
     "@typescript-eslint/no-unused-expressions": "off"
-  ]
+  }
 }
