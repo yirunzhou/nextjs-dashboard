@@ -8,6 +8,8 @@ import { argv0 } from 'process';
 export default async function Page() {
     const revenue = await fetchRevenue();
     const latestInvoices = await fetchLatestInvoices();
+
+    const test_var = 0
     // const { numberOfInvoices, numberOfCustomers, totalPaidInvoices, totalPendingInvoices } = await fetchCardData();
     const numberOfInvoices = 0
     const numberOfCustomers = 0
