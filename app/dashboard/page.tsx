@@ -8,13 +8,7 @@ import { argv0 } from 'process';
 export default async function Page() {
     const revenue = await fetchRevenue();
     const latestInvoices = await fetchLatestInvoices();
-
-    const test_var = 0
-    // const { numberOfInvoices, numberOfCustomers, totalPaidInvoices, totalPendingInvoices } = await fetchCardData();
-    const numberOfInvoices = 0
-    const numberOfCustomers = 0
-    const totalPaidInvoices = 0
-    const totalPendingInvoices = 0
+    const { numberOfInvoices, numberOfCustomers, totalPaidInvoices, totalPendingInvoices } = await fetchCardData();
     return (
         <main>
             <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
